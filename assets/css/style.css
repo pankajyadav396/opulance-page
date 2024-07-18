@@ -107,7 +107,7 @@
 }
 
 /* ============================================    SWIPER    ======================================= */
-.max-w-385 {
+.max-w-405 {
     max-width: 405px;
 }
 
@@ -131,7 +131,7 @@
 }
 
 .btn-custmize {
-    padding: 20px 40px;
+    padding: 15px 40px;
     border: none;
     border-radius: 59px;
 }
@@ -176,7 +176,7 @@
     rotate: 270deg;
     transform: translateX(-500px);
     position: absolute;
-    left: -350px;
+    left: -200px;
 }
 
 @media (min-width:992px) {
@@ -220,6 +220,19 @@
     .text-rotate {
         transform: translateX(-500px);
     }
+
+}
+
+@media (max-width:1600px) {
+    .text-rotate {
+        left: -171px;
+    }
+}
+
+@media (max-width:992px) {
+    .text-rotate {
+        left: -300px;
+    }
 }
 
 @media (max-width:768px) {
@@ -236,11 +249,5 @@
         height: 2px;
         background-color: var(--color-yellow);
         bottom: -4px;
-    }
-}
-
-@media (max-width:992px) {
-    .text-rotate {
-        left: -300px;
     }
 }
