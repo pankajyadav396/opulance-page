@@ -170,14 +170,20 @@
 }
 
 .text-rotate {
-    -webkit-text-stroke: 1px white;
+    -webkit-text-stroke: 1px #3f3f3f;
+    -webkit-text-fill-color: transparent;
+    color: transparent !important;
+    rotate: 270deg;
+    transform: translateX(-500px);
+    position: absolute;
+    left: -350px;
 }
 
 @media (min-width:992px) {
     .credit-card {
         position: absolute;
         max-width: 550px;
-        top: 50%;
+        top: 55%;
         transform: translateY(-50%);
     }
 }
@@ -200,11 +206,19 @@
     .credit-card {
         max-width: 673px;
     }
+
+    .text-rotate {
+        transform: translateX(-300px);
+    }
 }
 
 @media (min-width:1600px) {
     .credit-card {
         max-width: 773px;
+    }
+
+    .text-rotate {
+        transform: translateX(-500px);
     }
 }
 
@@ -222,5 +236,11 @@
         height: 2px;
         background-color: var(--color-yellow);
         bottom: -4px;
+    }
+}
+
+@media (max-width:992px) {
+    .text-rotate {
+        left: -300px;
     }
 }
