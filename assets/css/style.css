@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    scroll-behavior: smooth;
+}
+
+.pt-21 {
+    padding-top: 21px;
+}
+
+.ff-montserrat {
+    font-family: 'montserrat', sans-serif;
+}
+
+.bg-header {
+    background-image: url('../images/png/bg-header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 898px
+}
+
+.mobileView {
+    position: fixed;
+    background-image: url(../images/png/bg-header.png);
+    min-height: 100vh;
+    width: 768px;
+    top: 0;
+    right: -768px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 300ms linear;
+    z-index: 5;
+}
+
+.z-5 {
+    z-index: 5;
+}
+
+.overflow_hidden {
+    overflow: hidden !important;
+}
+
+.menu .span1 {
+    height: 2px;
+    width: 44px;
+    background-color: #FFF;
+    display: block;
+    border-radius: 20px;
+}
+
+.menu .span2 {
+    height: 2px;
+    width: 32px;
+    background-color: #FFF;
+    display: block;
+    border-radius: 20px;
+}
+
+.menu .span3 {
+    height: 2px;
+    width: 32px;
+    background-color: white;
+    display: block;
+    border-radius: 20px;
+}
+
+.menu span {
+    transition: 300ms linear;
+}
+
+.cross .span1 {
+    transform: rotate(42deg) translateY(15px);
+    transition: 300ms linear;
+    background-color: #FFF;
+    width: 30px;
+}
+
+.cross .span2 {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 300ms linear;
+}
+
+.cross .span3 {
+    transform: rotate(-43deg) translateY(-16px);
+    transition: 300ms linear;
+    background-color: #FFF;
+    width: 30px;
+}
+
+.h-48 {
+    height: 48px;
+}
+
+.max-w-248 {
+    max-width: 248px;
+}
+
+.max-w-564 {
+    max-width: 564px;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+/* ============================================    SWIPER    ======================================= */
+.max-w-385 {
+    max-width: 405px;
+}
+
+.swiper-container {
+    max-width: 1792px;
+    height: 100%;
+}
+
+.after-line {
+    position: relative;
+}
+
+.after-line::after {
+    position: absolute;
+    content: "";
+    width: 278px;
+    right: 17%;
+    height: 2px;
+    background-color: var(--color-yellow);
+    bottom: -4px;
+}
+
+.btn-custmize {
+    padding: 20px 40px;
+    border: none;
+    border-radius: 59px;
+}
+
+.btn-view {
+    padding: 20px 40px;
+    border: none;
+    border-radius: 59px;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.swiper-pagination-bullet {
+    border-radius: 33px !important;
+    width: 24.56px !important;
+    height: 10.11px !important;
+    background: var(--color-greywhite) !important;
+}
+
+.max-w-1792 {
+    max-width: 1792px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background-color: white;
+    border-radius: 100%;
+    width: 80px !important;
+    height: 80px !important;
+    color: black !important;
+}
+
+.text-rotate {
+    -webkit-text-stroke: 1px white;
+}
+
+@media (min-width:992px) {
+    .credit-card {
+        position: absolute;
+        max-width: 550px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (min-width:1200px) {
+    .bg-header {
+        background-image: url('../images/png/bg-header.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: center;
+        min-height: 100vh;
+    }
+
+    .credit-card {
+        max-width: 600px;
+    }
+}
+
+@media (min-width:1400px) {
+    .credit-card {
+        max-width: 673px;
+    }
+}
+
+@media (min-width:1600px) {
+    .credit-card {
+        max-width: 773px;
+    }
+}
+
+@media (max-width:768px) {
+    .mobileView {
+        width: 100%;
+        right: -100%;
+    }
+
+    .after-line::after {
+        position: absolute;
+        content: "";
+        width: 80%;
+        right: 10%;
+        height: 2px;
+        background-color: var(--color-yellow);
+        bottom: -4px;
+    }
+}
